@@ -1,0 +1,176 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+body {
+	/*  font-family: Inter, sans-serif; */
+	background-color: black;
+	color: white;
+}
+img{
+    width: 100%;
+    border-radius: 50%;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+.description {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #727171;
+	text-decoration:none;
+}
+.title {
+	color: #ff7613;
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+}.item_preTitle {
+	font-size: 1.4rem;
+	color: #727171;
+	font-weight: 300;
+}
+.item_title {
+	font-size: 1.6rem;
+	color: white;
+	font-weight: 700;
+	margin: 0.8rem 0;
+}
+.item_subtitle {
+	font-size: 1.4rem;
+	color: #727171;
+	font-weight: 400;
+}
+
+ ul{
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #727171;	
+	text-decoration:none;
+	list-style-type:none;    
+}
+
+/* Layout */
+.container {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	padding: 5rem;
+	background: #070707;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+}
+
+.profile {
+	grid-column: 1 / -1;
+	margin-bottom: 2rem;
+}
+.profile-container {
+	display: flex;
+	gap: 2rem;
+}
+.image{
+	max-width: 250px;
+}
+.first-name{
+	color: white;
+	font-weight: 200;
+	font-size: clamp(2rem, 8vw, 4rem);
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: -0.8rem;
+}
+.second-name {
+	color:#ff7613;
+	font-weight: 700;
+	font-size: clamp(2.5rem, 15vw, 7rem);
+	text-transform: uppercase;
+	display: block;
+}
+.work-title {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+. description li{
+    text-decoration:none;
+}
+/* GROUPS */
+.group-1,
+.group-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}/* objective */
+.objective-list {
+	margin-top: 1rem;
+	margin-left: 2rem;
+	line-height: 2;
+}/* PERSONAL INFO */
+.personal-list{
+margin-top: 1rem;
+	margin-left: 2rem;
+	line-height: 2;
+}/* skills */
+.skills-list{
+margin-top: 1rem;
+	margin-left: 2rem;
+	line-height: 2;
+}/* ref */
+.ref_item {
+	margin-top: 2rem;
+}
+.ref_name {
+	font-size: 1.6rem;
+	font-weight: 700;
+}/* exp */
+.exp_item {
+	margin-top: 2rem;
+}
+ .work-title, .details{
+  
+  }
+.footer{
+    margin-top: 400px;
+    text-align:center;
+}
+
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+		grid-template-columns: 1fr;
+		padding: 3rem;
+		gap: 7rem;
+	}
+	.profile {
+		margin-bottom: 0;
+	}
+	.profile-container {
+		flex-direction: column;
+	}
+	.image{
+	    display: block;
+  margin-left: auto;
+  margin-right: auto;
+	}
+	.footer{
+	    margin-top: 0;
+	    margin-bottom: 25px;
+	}  
+}
+@media only screen and (min-width: 768px){
+    .name, .work-title, .details{
+    margin-left: 30px;
+}
+}
+	
